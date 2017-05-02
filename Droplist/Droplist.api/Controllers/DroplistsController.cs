@@ -22,9 +22,9 @@ namespace Droplist.api.Controllers
 				droplist.BuildingId,
 				droplist.DroplistName,
 				droplist.CreatedOnDate,
-				droplist.EmployeeId,
+				droplist.StockerId,
+				droplist.DriverId,
 				droplist.SectionId,
-				droplist.Description
 			});
 
 			return Ok(resultSet);
@@ -45,9 +45,9 @@ namespace Droplist.api.Controllers
 				droplist.BuildingId,
 				droplist.DroplistName,
 				droplist.CreatedOnDate,
-				droplist.EmployeeId,
+				droplist.StockerId,
+				droplist.DriverId,
 				droplist.SectionId,
-				droplist.Description
 
 			};
 			return Ok(resultSet);
@@ -70,12 +70,11 @@ namespace Droplist.api.Controllers
 			var dbDroplist = db.Droplists.Find(id);
 			dbDroplist.DroplistId = droplist.DroplistId;
 			dbDroplist.BuildingId = droplist.BuildingId;
-			dbDroplist.EmployeeId = droplist.EmployeeId;
+			dbDroplist.StockerId = droplist.StockerId;
+			dbDroplist.DriverId = droplist.DriverId;
 			dbDroplist.DroplistName = droplist.DroplistName;
 			dbDroplist.SectionId = droplist.SectionId;
 			dbDroplist.CreatedOnDate = droplist.CreatedOnDate;
-			dbDroplist.Description = droplist.Description;
-
 			db.Entry(dbDroplist).State = EntityState.Modified;
 
             try
@@ -115,9 +114,9 @@ namespace Droplist.api.Controllers
 				droplist.BuildingId,
 				droplist.DroplistName,
 				droplist.CreatedOnDate,
-				droplist.EmployeeId,
+				droplist.StockerId,
+				droplist.DriverId,
 				droplist.SectionId,
-				droplist.Description
 			});
         }
 

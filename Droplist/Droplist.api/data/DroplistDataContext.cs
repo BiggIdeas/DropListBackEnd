@@ -36,8 +36,13 @@ namespace Droplist.api.data
 
 			modelBuilder.Entity<Employee>()
 				.HasMany(Employee => Employee.Droplists)
-				.WithRequired(droplist => droplist.Employee)
-				.HasForeignKey(droplist => droplist.EmployeeId);
+				.WithRequired(droplist => droplist.Stocker)
+				.HasForeignKey(droplist => droplist.StockerId);
+
+			modelBuilder.Entity<Employee>()
+				.HasMany(Employee => Employee.Droplists)
+				.WithRequired(droplist => droplist.Driver)
+				.HasForeignKey(droplist => droplist.DriverId);
 
 			modelBuilder.Entity<Section>()
 				.HasMany(Section => Section.Droplists)

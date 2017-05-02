@@ -10,7 +10,7 @@ namespace Droplist.api.Models
 	{
 
 		[Required]
-		public string EmailAddress { get; set; }
+		public string EmployeeNumber { get; set; }
 
 		[Required, MinLength(8), DataType(DataType.Password)]
 		public string Password { get; set; }

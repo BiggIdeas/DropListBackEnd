@@ -35,7 +35,7 @@ namespace Droplist.api.Controllers
 
 			var user = new User
 			{
-				UserName = registration.EmailAddress
+				UserName = registration.EmployeeNumber
 			};
 
 			var result = _userManager.Create(user, registration.Password);

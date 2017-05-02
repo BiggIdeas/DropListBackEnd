@@ -138,12 +138,5 @@ C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Drop
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\bin\System.Net.Http.Formatting.xml
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\bin\System.Web.Http.xml
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\bin\System.Web.Http.WebHost.xml
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.InitialMigration.resources
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.UpdateDatabase.resources
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.csproj.GenerateResource.Cache
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.dll
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.pdb
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.UpdateRelationships.resources
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.DeleteRelationships.resources
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.DeleteRelationshipBuildingAndSection.resources
-C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.ChangedRelationship.resources
