@@ -144,3 +144,6 @@ C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Drop
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.dll
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.pdb
 C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.UpdateRelationships.resources
+C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.DeleteRelationships.resources
+C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.DeleteRelationshipBuildingAndSection.resources
+C:\Users\Stephenprosso\Documents\Dev\DroplistBackend\DropListAuthentication\Droplist\Droplist.api\obj\Debug\Droplist.api.Migrations.ChangedRelationship.resources

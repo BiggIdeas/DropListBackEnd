@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace Droplist.api.Models
 {
 	public class Building
 	{
 		// Scalar Properties
-
 		public int BuildingId { get; set; }
 		public int BuildingNumber { get; set; }
 		public string BuildingName { get; set; }
@@ -21,9 +17,5 @@ namespace Droplist.api.Models
 		// Navigation properties
 		public virtual ICollection<Droplist> Droplists { get; set; }
 		public virtual ICollection<Employee> Employees { get; set; }
-		public virtual ICollection<Section> Sections { get; set; }
-		public virtual ICollection<Product> Products { get; set; }
-
-
 	}
 }

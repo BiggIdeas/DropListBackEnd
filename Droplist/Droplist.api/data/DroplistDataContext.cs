@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 using Droplist.api.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -17,14 +13,10 @@ namespace Droplist.api.data
 		public IDbSet<Building> Buildings { get; set; }
 		public IDbSet<Department> Departments { get; set; }
 		public IDbSet<Models.Droplist> Droplists { get; set; }
-		public IDbSet<DroplistItem> DroplistItem { get; set; }
-		public IDbSet<Employee> Employee { get; set; }
+		public IDbSet<DroplistItem> DroplistItems { get; set; }
+		public IDbSet<Employee> Employees { get; set; }
 		public IDbSet<Product> Products { get; set; }
 		public IDbSet<Section> Sections { get; set; }
-
-
-
-
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
@@ -37,33 +29,20 @@ namespace Droplist.api.data
 				.HasForeignKey(droplist => droplist.BuildingId)
 				.WillCascadeOnDelete(false);
 
-
 			modelBuilder.Entity<Building>()
-			.HasMany(Building => Building.Employees)
-			.WithRequired(employee => employee.Building)
-			.HasForeignKey(employee => employee.BuildingId);
-
-			modelBuilder.Entity<Building>()
-			.HasMany(Building => Building.Sections)
-			.WithRequired(section => section.Building)
-			.HasForeignKey(section => section.BuildingId);
-
-			modelBuilder.Entity<Building>()
-			.HasMany(Building => Building.Products)
-			.WithRequired(product => product.Building)
-			.HasForeignKey(product => product.BuildingId)
-							.WillCascadeOnDelete(false);
-
+				.HasMany(Building => Building.Employees)
+				.WithRequired(employee => employee.Building)
+				.HasForeignKey(employee => employee.BuildingId);
 
 			modelBuilder.Entity<Employee>()
 				.HasMany(Employee => Employee.Droplists)
 				.WithRequired(droplist => droplist.Employee)
 				.HasForeignKey(droplist => droplist.EmployeeId);
 
-			modelBuilder.Entity<Department>()
-				.HasMany(Department => Department.Droplists)
-				.WithRequired(droplist => droplist.Department)
-				.HasForeignKey(droplist => droplist.DepartmentId);
+			modelBuilder.Entity<Section>()
+				.HasMany(Section => Section.Droplists)
+				.WithRequired(droplist => droplist.Section)
+				.HasForeignKey(droplist => droplist.SectionId);
 
 			modelBuilder.Entity<Department>()
 				.HasMany(Department => Department.Sections)
@@ -84,8 +63,6 @@ namespace Droplist.api.data
 				.HasOptional(user => user.Employee)
 				.WithOptionalDependent(employee => employee.User)
 				.Map(m => m.MapKey("EmployeeId"));
-
-			
 
 			base.OnModelCreating(modelBuilder);
 		}

@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace Droplist.api.Models
 {
 	public class Department
 	{
 		public int DepartmentId { get; set; }
-		public int DepartmentName { get; set; }
-		public int BuildingId { get; set; }
+		public string DepartmentName { get; set; }
 
 		//navigation properties
-		public virtual ICollection<Droplist> Droplists { get; set; }
 		public virtual ICollection<Section> Sections { get; set; }
-
 	}
 }

@@ -13,12 +13,8 @@ namespace Droplist.api.Models
 		public DateTime? Completed { get; set; }
 		public DateTime? Rejected { get; set; }
 
-
-
 		public virtual Droplist Droplist { get; set; }
 		public virtual Product Product { get; set; }
-
-
 	}
 
 }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace Droplist.api.Models
 {
@@ -9,14 +6,9 @@ namespace Droplist.api.Models
 	{
 		public int SectionId { get; set; }
 		public int DepartmentId { get; set; }
-		public int BuildingId { get; set; }
 		public string SectionName { get; set; } 
 
-
 		public virtual Department Department { get; set; }
-		public virtual Building Building { get; set; }
-
-
-
+		public virtual ICollection<Droplist> Droplists { get; set; }
 	}
 }
