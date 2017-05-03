@@ -138,6 +138,10 @@
     <Compile Include="Controllers\SectionsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="data\DroplistDataContext.cs" />
+    <Compile Include="Migrations\201705031732262_InitialMigration.cs" />
+    <Compile Include="Migrations\201705031732262_InitialMigration.Designer.cs">
+      <DependentUpon>201705031732262_InitialMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Building.cs" />
     <Compile Include="Models\Department.cs" />
@@ -164,6 +168,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705031732262_InitialMigration.resx">
+      <DependentUpon>201705031732262_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
